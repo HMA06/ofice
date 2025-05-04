@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact With Us</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #43a3e2;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo img {
+            width: 300px;
+            margin: 20px auto;
+            display: flex;
+            border-radius: 15px;
+            box-shadow: 10px 10px 5px burlywood;
+            transition: transform 0.3s;
+        }
+
+        .logo img:hover {
+            transform: scale(1.05);
+        }
+
+        #contact_us {
+            background-color: #ffffffd2;
+            margin: 40px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        td {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .textinput {
+            padding: 7px;
+            width: 100%;
+            border: solid 1px #ccc;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background: #000;
+            color: #f1f1f1;
+            border: none;
+            padding: 10px;
+            width: 120px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: transform 0.3s ease;        }
+
+        .btn:hover {
+            background: #0066ff;
+            transform: scale(1.1);
+
+        }
+
+        iframe {
+            display: block;
+            margin: 30px auto;
+            border: 0;
+            border-radius: 1px;
+        }
+        .pages {
+            clear: both;
+            padding: 10px 0;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #ffffff;
+            border-radius: 15px;
+
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            font-size: 22px;
+            text-decoration: none;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #0072ff;
+            left: 50%;
+            bottom: 0;
+            transition: 0.3s;
+        }
+
+        li a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        li a:hover {
+            color: #0072ff;
+        }
+
+
+        #footer {
+            text-align: center;
+            color: #f1f1f1;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body onload="window.scrollTo(0, 0);"></bodyonload>
+
+    </div>
+    <div class="logo" data-aos="fade-up">
+        <img src="images/icon.png" alt="Logo">
+    </div>
+    
+    <div class="pages" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="#">Contact With Us</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+          </ul>          
+
+    <div id="contact_us" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
+        <table style="width: 100%;">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" class="textinput" placeholder="Name"></td>
+                <td>Email</td>
+                <td><input type="email" class="textinput" placeholder="Email"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" class="textinput" placeholder="Phone Number"></td>
+                <td>Message title</td>
+                <td><input type="text" class="textinput" placeholder="Title"></td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td colspan="3">
+                    <textarea class="textinput" style="height:100px; resize: none;" placeholder="Write here your message..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center;">
+                    <input type="button" value="Send" class="btn">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+       
+    <div>
+        <iframe class="map" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.8035095102805!2d28.75559287666964!3d41.20425720733346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caabee2a1ae0b3%3A0x9d24cfad163be444!2sImrahor%20Hz.%20%C3%96mer%20Kuran%20Kur&#39;an%20Kursu!5e0!3m2!1sen!2str!4v1746034459466!5m2!1sen!2str" 
+            width="300" height="300">
+        </iframe>
+    </div>
+
+    <style>
+
+        .map {  
+            box-shadow: 10px 10px 5px rgb(1, 90, 255);
+            border-radius: 15px;
+        }
+
+            
+        </style>
+
+    <div id="footer">
+        <em><u>All rights reserved</u></em> &copy; <u><em>2025</em></u>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
